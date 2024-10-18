@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-100 text-gray-900">
+
+  <!-- Header Section -->
+  <header class="bg-gray-500 sticky top-0 z-50 px-4">
+    <div class="container mx-auto flex justify-between items-center py-4">
+      <!-- Left section: Logo -->
+      <div class="flex items-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpySnEf3APqf6_O1Q1_Bn8gCJdAaSpjdhApe7OAI7pUclM18527_lzTQtcWMi_AkbcBZ8&usqp=CAU" alt="Logo" class="h-14 w-auto mr-4">
+      </div>
+
+      <!-- Hamburger menu (for mobile) -->
+      <div class="flex md:hidden">
+        <button id="hamburger" class="text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Center section: Menu -->
+      <nav class="hidden md:flex md:flex-grow justify-center">
+        <ul class="flex justify-center space-x-4 text-white">
+          <li><a href="#home" class="hover:text-secondary font-bold">Home</a></li>
+          <li><a href="#aboutus" class="hover:text-secondary font-bold">About us</a></li>
+          <li><a href="#results" class="hover:text-secondary font-bold">Results</a></li>
+          <li><a href="#reviews" class="hover:text-secondary font-bold">Reviews</a></li>
+          <li><a href="#portfolio" class="hover:text-secondary font-bold">Portfolio</a></li>
+          <li><a href="#team" class="hover:text-secondary font-bold">Team</a></li>
+          <li><a href="#contact" class="hover:text-secondary font-bold">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right section: Buttons (for desktop) -->
+      <div class="hidden lg:flex items-center space-x-4">
+        <a href="https://github.com/samehkaroui" class="bg-green-500 hover:bg-blue-500 text-white font-semibold px-4 py-2 rounded inline-block">Github</a>
+        <a href="#" class="bg-blue-500 hover:bg-green-500 text-white font-semibold px-4 py-2 rounded inline-block">Download</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative bg-cover bg-center h-screen" style="background-image: url('https://www.centre-europeen-formation.fr/wp-content/uploads/2023/03/slider-developpeur-web.jpeg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="container mx-auto h-full flex flex-col justify-center items-center text-center">
+      <h2 class="text-white text-5xl font-bold mb-4">Hi, I'm Sameh Kr</h2>
+      <p class="text-white text-lg">A passionate Web Developer creating elegant and efficient solutions.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container mx-auto py-16">
+    <h2 class="text-4xl font-bold text-center mb-8">My Skills</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2">HTML & CSS</h3>
+        <p>Creating responsive and modern websites.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2">JavaScript</h3>
+        <p>Developing dynamic and interactive user interfaces.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Tailwind CSS</h3>
+        <p>Fast and efficient styling with great flexibility.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container mx-auto py-16 bg-gray-50">
+    <h2 class="text-4xl font-bold text-center mb-8">My Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Project Card -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://xeta-digital.com/wp-content/uploads/2021/11/types-de-sites-web.png" alt="Project 1" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Projet web</h3>
+          <p class="text-gray-600"></p>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://lh3.googleusercontent.com/proxy/B5eBwZeWpAWAp04SnOcFD888g4x0ANbVN1AMdL4mggojrEuMt6Z1Nw47SNTxkjY1ku5mjCE_2tlYCaUQEKVjY0su1cE33ysI0qQCm9JzEcL9PYbx-FUaFIwWorO99aBL9hKztWHGuRoTYa11-w" alt="Project 2" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Arduino</h3>
+          <p class="text-gray-600"></p>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/project_management_coursefees.jpg" alt="Project 3" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Management Ideas 2025</h3>
+          <p class="text-gray-600"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="container mx-auto py-16">
+    <h2 class="text-4xl font-bold text-center mb-8">Contact Me</h2>
+    <form class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+      <div class="mb-6">
+        <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+        <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Your name">
+      </div>
+      <div class="mb-6">
+        <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+        <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Your email">
+      </div>
+      <div class="mb-6">
+        <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+        <textarea id="message" name="message" rows="4" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Your message"></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Send</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 py-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+      <div class="mt-4">
+        <a href="#" class="text-gray-400 hover:text-white mx-2">Facebook</a>
+        <a href="#" class="text-gray-400 hover:text-white mx-2">LinkedIn</a>
+        <a href="#" class="text-gray-400 hover:text-white mx-2">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
